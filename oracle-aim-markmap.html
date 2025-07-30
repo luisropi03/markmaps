@@ -10,9 +10,11 @@
   margin: 0;
   padding: 0;
 }
-html {
+html, body {
   font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  background: transparent !important; /* Fondo transparente */
+  color: black !important; /* Texto negro */
 }
 #mindmap {
   display: block;
@@ -20,14 +22,84 @@ html {
   height: 100vh;
 }
 .markmap-dark {
-  background: #27272a;
-  color: white;
+  background: transparent !important; /* Sin fondo oscuro */
+  color: black !important;
 }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
 </head>
 <body>
 <svg id="mindmap"></svg>
-<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:S,mm:Q}=window,$=new S.Toolbar;$.attach(Q);const I=$.render();I.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(I)})})()</script><script>((l,U,M,R)=>{const N=l();window.mm=N.Markmap.create("svg#mindmap",(U||N.deriveOptions)(R),M),window.matchMedia("(prefers-color-scheme: dark)").matches&&document.documentElement.classList.add("markmap-dark")})(()=>window.markmap,null,{"content":"M&#xe9;todo de Implementaci&#xf3;n Oracle ERP (OUM / AIM)","children":[{"content":"1. Planificaci&#xf3;n / Initiate","children":[{"content":"<strong>RD010: Project Definition</strong>","children":[{"content":"Documento que define objetivos, equipo, roles y plan de proyecto.","children":[],"payload":{"tag":"li","lines":"8,9"}}],"payload":{"tag":"li","lines":"7,9"}},{"content":"<strong>RD020: Scope Definition</strong>","children":[{"content":"Define el alcance funcional y t&#xe9;cnico de la implementaci&#xf3;n.","children":[],"payload":{"tag":"li","lines":"10,12"}}],"payload":{"tag":"li","lines":"9,12"}}],"payload":{"tag":"h2","lines":"6,7"}},{"content":"2. An&#xe1;lisis de Requerimientos","children":[{"content":"<strong>RD050: Business Process Scenarios</strong>","children":[{"content":"Describe los procesos actuales (AS-IS) y casos de uso del negocio.","children":[],"payload":{"tag":"li","lines":"14,15"}}],"payload":{"tag":"li","lines":"13,15"}},{"content":"<strong>RD090: Requirements Gathering</strong>","children":[{"content":"Matriz de requerimientos funcionales y t&#xe9;cnicos.","children":[],"payload":{"tag":"li","lines":"16,17"}}],"payload":{"tag":"li","lines":"15,17"}},{"content":"<strong>RD100: Business Process Mapping</strong>","children":[{"content":"Mapeo de procesos TO-BE en Oracle, mostrando c&#xf3;mo quedar&#xe1;n en el ERP.","children":[],"payload":{"tag":"li","lines":"18,20"}}],"payload":{"tag":"li","lines":"17,20"}}],"payload":{"tag":"h2","lines":"12,13"}},{"content":"3. Dise&#xf1;o / Solution Design","children":[{"content":"<strong>MD050: Functional Design</strong>","children":[{"content":"Dise&#xf1;o funcional para RICEW (Reportes, Interfaces, Conversiones, Extensiones, Workflows).","children":[],"payload":{"tag":"li","lines":"22,23"}}],"payload":{"tag":"li","lines":"21,23"}},{"content":"<strong>MD070: Technical Design</strong>","children":[{"content":"Dise&#xf1;o t&#xe9;cnico detallado para desarrollos, interfaces y extensiones.","children":[],"payload":{"tag":"li","lines":"24,25"}}],"payload":{"tag":"li","lines":"23,25"}},{"content":"<strong>BR100: Application Setup Document</strong>","children":[{"content":"Documento de configuraci&#xf3;n funcional del sistema paso a paso.","children":[],"payload":{"tag":"li","lines":"26,27"}}],"payload":{"tag":"li","lines":"25,27"}},{"content":"<strong>PAD100: Application Prototyping</strong>","children":[{"content":"Primer prototipo funcional del ERP para validaci&#xf3;n temprana de procesos y adopci&#xf3;n de usuarios.","children":[],"payload":{"tag":"li","lines":"28,30"}}],"payload":{"tag":"li","lines":"27,30"}}],"payload":{"tag":"h2","lines":"20,21"}},{"content":"4. Construcci&#xf3;n / Build","children":[{"content":"<strong>CV010: Conversion Strategy</strong>","children":[{"content":"Estrategia para migraci&#xf3;n de datos maestros e hist&#xf3;ricos.","children":[],"payload":{"tag":"li","lines":"32,33"}}],"payload":{"tag":"li","lines":"31,33"}},{"content":"<strong>TE020: Unit Test Scripts</strong>","children":[{"content":"Scripts para pruebas unitarias de cada m&#xf3;dulo/configuraci&#xf3;n.","children":[],"payload":{"tag":"li","lines":"34,35"}}],"payload":{"tag":"li","lines":"33,35"}},{"content":"<strong>TE030: System Integration Test Scripts</strong>","children":[{"content":"Scripts para pruebas integradas entre m&#xf3;dulos y sistemas externos.","children":[],"payload":{"tag":"li","lines":"36,38"}}],"payload":{"tag":"li","lines":"35,38"}}],"payload":{"tag":"h2","lines":"30,31"}},{"content":"5. Pruebas / Test","children":[{"content":"<strong>TE040: User Acceptance Test (UAT)</strong>","children":[{"content":"Scripts para pruebas finales con usuarios clave.","children":[],"payload":{"tag":"li","lines":"40,41"}}],"payload":{"tag":"li","lines":"39,41"}},{"content":"<strong>TE050: Test Results &amp; Sign-off</strong>","children":[{"content":"Resultados de pruebas y firmas de aceptaci&#xf3;n.","children":[],"payload":{"tag":"li","lines":"42,44"}}],"payload":{"tag":"li","lines":"41,44"}}],"payload":{"tag":"h2","lines":"38,39"}},{"content":"6. Transici&#xf3;n / Deploy","children":[{"content":"<strong>BR120: Production Cutover Plan</strong>","children":[{"content":"Plan detallado de actividades para el paso a productivo.","children":[],"payload":{"tag":"li","lines":"46,47"}}],"payload":{"tag":"li","lines":"45,47"}},{"content":"<strong>TR010: Training Materials</strong>","children":[{"content":"Materiales de capacitaci&#xf3;n para usuarios finales.","children":[],"payload":{"tag":"li","lines":"48,50"}}],"payload":{"tag":"li","lines":"47,50"}}],"payload":{"tag":"h2","lines":"44,45"}},{"content":"7. Soporte Post-Go Live","children":[{"content":"<strong>PS010: Post Production Support Plan</strong>","children":[{"content":"Plan de soporte inicial y monitoreo posterior al go-live.","children":[],"payload":{"tag":"li","lines":"52,53"}}],"payload":{"tag":"li","lines":"51,53"}},{"content":"<strong>PS020: Lessons Learned</strong>","children":[{"content":"Documento de lecciones aprendidas y recomendaciones para mejoras.","children":[],"payload":{"tag":"li","lines":"54,56"}}],"payload":{"tag":"li","lines":"53,56"}}],"payload":{"tag":"h2","lines":"50,51"}},{"content":"Tipos de Entregables (AIM / OUM)","children":[{"content":"<strong>RD</strong>: Requirements Documents &#x2192; Documentos de requerimientos y procesos","children":[],"payload":{"tag":"li","lines":"57,58"}},{"content":"<strong>MD</strong>: Module/Design Documents &#x2192; Dise&#xf1;o funcional y t&#xe9;cnico","children":[],"payload":{"tag":"li","lines":"58,59"}},{"content":"<strong>BR</strong>: Business/Setup Documents &#x2192; Configuraci&#xf3;n y planes de despliegue","children":[],"payload":{"tag":"li","lines":"59,60"}},{"content":"<strong>PAD</strong>: Prototyping &amp; Adoption &#x2192; Prototipos funcionales y validaci&#xf3;n temprana","children":[],"payload":{"tag":"li","lines":"60,61"}},{"content":"<strong>CV</strong>: Conversion Documents &#x2192; Migraci&#xf3;n de datos","children":[],"payload":{"tag":"li","lines":"61,62"}},{"content":"<strong>TE</strong>: Testing Documents &#x2192; Pruebas unitarias, integradas y UAT","children":[],"payload":{"tag":"li","lines":"62,63"}},{"content":"<strong>TR</strong>: Training &#x2192; Capacitaci&#xf3;n de usuarios","children":[],"payload":{"tag":"li","lines":"63,64"}},{"content":"<strong>PS</strong>: Post-Support &#x2192; Soporte y cierre de proyecto","children":[],"payload":{"tag":"li","lines":"64,65"}}],"payload":{"tag":"h2","lines":"56,57"}}],"payload":{"tag":"h1","lines":"4,5"}},{})</script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script>
+<script>
+(() => {
+  setTimeout(() => {
+    const { markmap: S, mm: Q } = window;
+    const $ = new S.Toolbar;
+    $.attach(Q);
+    const I = $.render();
+    I.setAttribute("style","position:absolute;bottom:20px;right:20px"),
+    document.body.append(I)
+  })
+})()
+</script>
+<script>
+((l,U,M,R)=>{
+  const N=l();
+  window.mm=N.Markmap.create("svg#mindmap",(U||N.deriveOptions)(R),M);
+  // Forzar modo claro
+  document.documentElement.classList.remove("markmap-dark");
+})(()=>window.markmap,null,
+{"content":"M&#xe9;todo de Implementaci&#xf3;n Oracle ERP (OUM / AIM)",
+"children":[
+  {"content":"1. Planificaci&#xf3;n / Initiate","children":[
+    {"content":"<strong>RD010: Project Definition</strong>","children":[
+      {"content":"Documento que define objetivos, equipo, roles y plan de proyecto.","children":[],"payload":{"tag":"li","lines":"8,9"}}
+    ],"payload":{"tag":"li","lines":"7,9"}},
+    {"content":"<strong>RD020: Scope Definition</strong>","children":[
+      {"content":"Define el alcance funcional y t&#xe9;cnico de la implementaci&#xf3;n.","children":[],"payload":{"tag":"li","lines":"10,12"}}
+    ],"payload":{"tag":"li","lines":"9,12"}}
+  ],"payload":{"tag":"h2","lines":"6,7"}},
+  {"content":"2. An&#xe1;lisis de Requerimientos","children":[
+    {"content":"<strong>RD050: Business Process Scenarios</strong>","children":[
+      {"content":"Describe los procesos actuales (AS-IS) y casos de uso del negocio.","children":[],"payload":{"tag":"li","lines":"14,15"}}
+    ],"payload":{"tag":"li","lines":"13,15"}},
+    {"content":"<strong>RD090: Requirements Gathering</strong>","children":[
+      {"content":"Matriz de requerimientos funcionales y t&#xe9;cnicos.","children":[],"payload":{"tag":"li","lines":"16,17"}}
+    ],"payload":{"tag":"li","lines":"15,17"}},
+    {"content":"<strong>RD100: Business Process Mapping</strong>","children":[
+      {"content":"Mapeo de procesos TO-BE en Oracle, mostrando c&#xf3;mo quedar&#xe1;n en el ERP.","children":[],"payload":{"tag":"li","lines":"18,20"}}
+    ],"payload":{"tag":"li","lines":"17,20"}}
+  ],"payload":{"tag":"h2","lines":"12,13"}},
+  {"content":"3. Dise&#xf1;o / Solution Design","children":[
+    {"content":"<strong>MD050: Functional Design</strong>","children":[
+      {"content":"Dise&#xf1;o funcional para RICEW (Reportes, Interfaces, Conversiones, Extensiones, Workflows).","children":[],"payload":{"tag":"li","lines":"22,23"}}
+    ],"payload":{"tag":"li","lines":"21,23"}},
+    {"content":"<strong>MD070: Technical Design</strong>","children":[
+      {"content":"Dise&#xf1;o t&#xe9;cnico detallado para desarrollos, interfaces y extensiones.","children":[],"payload":{"tag":"li","lines":"24,25"}}
+    ],"payload":{"tag":"li","lines":"23,25"}},
+    {"content":"<strong>BR100: Application Setup Document</strong>","children":[
+      {"content":"Documento de configuraci&#xf3;n funcional del sistema paso a paso.","children":[],"payload":{"tag":"li","lines":"26,27"}}
+    ],"payload":{"tag":"li","lines":"25,27"}},
+    {"content":"<strong>PAD100: Application Prototyping</strong>","children":[
+      {"content":"Primer prototipo funcional del ERP para validaci&#xf3;n temprana de procesos y adopci&#xf3;n de usuarios.","children":[],"payload":{"tag":"li","lines":"28,30"}}
+    ],"payload":{"tag":"li","lines":"27,30"}}
+  ],"payload":{"tag":"h2","lines":"20,21"}},
+  {"content":"4. Construcci&#xf3;n / Build","children":[
+    {"content":"<strong>CV010: Conversion Strategy</strong>","children":[
+      {"content":"Estrategia para migraci&#xf3;n de datos maestros e hist&#xf3;ricos.","children":[],"payload":{"tag":"li","lines":"32,33"}}
+    ],"payload":{"tag":"li","lines":"31,33"}},
+    {"content":"<strong>TE020: Unit Test Scripts</strong>","children":[
+      {"content":"Scripts para pruebas unitarias de cada m&#xf3;dulo/configuraci&#xf3;n.","children":[],"payload":{"tag":"li","lines":"34,35"}}
+    ],"payload":{"tag":"li","lines":"33,35"}},
+    {"content":"<strong>TE030: System Integration Test Scripts</strong>","children":[
+      {"content":"Scripts para pruebas integradas entre m&#xf3;dulos y sistemas externos.","children":[],"payload":{"tag":"li","lines":"36,38"}}
+    ],"payload":{"tag":"li","lines":"35,38"}}
+  ],"payload":{"tag":"h2","lines":"30,31"}}
+]
+}, {})
+</script>
 </body>
 </html>
